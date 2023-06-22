@@ -1,5 +1,4 @@
-This repository copy (Python 3.6) is for review of the paper titled "Interconnectedness enhances network resilience of
-multimodal public transportation systems for Safe-to-Fail urban mobility"
+# This repository copy (Python 3.6) is for review of the paper titled "Interconnectedness enhances network resilience of multimodal public transportation systems for Safe-to-Fail urban mobility"
 
 Authors: Zizhen Xu, Shauhrat S. Chopra*
 
