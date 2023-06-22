@@ -32,7 +32,6 @@ def analyze_individual_unweighted_networks(analyze_topology_and_GINI=0,
                  ['FERRY'],
                  ['TRAM']]
     names = ['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM']
-    # for i in range(6):
     if not all_modes_put_together:
         steps = [0, 1, 2, 3, 4, 5]
     else:
@@ -43,23 +42,37 @@ def analyze_individual_unweighted_networks(analyze_topology_and_GINI=0,
         if not all_modes_put_together:
             mode = all_modes[i]
             modes_to_remove = [item for item in all_modes if item != mode]
-            # print(mptn.G.number_of_nodes(), mptn.G.number_of_edges(), len(mptn.network.functional_stop_list()))
             for item in modes_to_remove:
                 for subitem in item:
                     mptn.network.remove_routes_by_agency(subitem)
         check_stop_label()
         mptn.update_graph_by_routes_data()
         mptn.network.show()
-        # mptn.plot(show=True)
 
-        if analyze_topology_and_GINI:  # outdated
-            print('|V| = ', mptn.G.number_of_nodes())
-            print('|E| = ', mptn.G.number_of_edges())
-            print('GINI_nd =', round(mptn.preparedness_node_degree_gini(), 4))
-            print('GINI_bc =', round(mptn.preparedness_node_betweenness_centrality_gini(), 4))
-            print('CPL=', round(nx.average_shortest_path_length(mptn.G), 4))
-            print('radius=', nx.radius(mptn.G))
-            print('E=', nx.global_efficiency(mptn.G))
+        if analyze_topology_and_GINI:
+            v, e = mptn.G.number_of_nodes(), mptn.G.number_of_edges()
+            nd = round(mptn.preparedness_node_degree_gini(), 4)
+            bc = round(mptn.preparedness_node_betweenness_centrality_gini(), 4)
+            from benchmark_ER_expanding_unweighted_network import geospatial_efficiency, edge_length_distribution
+            node_coordinates = {id: stop.coordinates() for id, stop in mptn.network.stop_repository.items()}
+            ael, stdel, samples = edge_length_distribution(mptn.G, node_coordinates)
+            from networkx import strongly_connected_components
+            gcc = sorted(strongly_connected_components(mptn.G), key=len, reverse=True)
+            n_g0 = mptn.G.subgraph(gcc[0]).number_of_nodes()
+            prop = [['|V| = ', v],
+                    ['|E| = ', e],
+                    ['<k>', round(e / v, 2)],
+                    ['S_0', n_g0 / mptn.G.number_of_nodes()],
+                    ['l_max', xc.maximal_shortest_path_length(mptn.G)],
+                    ['<l>', round(xc.average_shortest_path_length_modified_for_unconnected_digragh(mptn.G), 2)],
+                    ['E', round(xc.global_efficiency_modified_for_unconnected_digragh(mptn.G), 2)],
+                    ['GE', round(geospatial_efficiency(mptn.G, node_coordinates), 2)],
+                    ['<l_e>', round(ael)],
+                    ['std_l_e', round(stdel)],
+                    ['GINI_nd =', round(nd, 3)],
+                    ['GINI_bc =', round(bc, 3)]]
+            for p in prop:
+                print(p[0], ',', p[1])
 
         if analyze_node_metric_distribution:
             plot_centrality_distribution(mptn,
@@ -73,15 +86,15 @@ def analyze_individual_unweighted_networks(analyze_topology_and_GINI=0,
             xc.export_list(mptn.robustness_unweighted_random_attack(number_of_tests=1000,
                                                                     multiple_removal=rb_step_size,
                                                                     multi_processing=True),
-                           filename=f'new_mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_rnd.csv')
+                           filename=f'mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_rnd.csv')
             xc.export_list(mptn.robustness_unweighted_degree_based_attack(number_of_tests=100,
                                                                           multiple_removal=rb_step_size,
                                                                           multi_processing=True),
-                           filename=f'new_mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_nd.csv')
+                           filename=f'mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_nd.csv')
             xc.export_list(mptn.robustness_unweighted_betweenness_based_attack(number_of_tests=100,
                                                                                multiple_removal=rb_step_size,
                                                                                multi_processing=True),
-                           filename=f'new_mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_bc.csv')
+                           filename=f'mptn_analyze_individual_unweighted_network_results/mptn_{names[i]}_rb_bc.csv')
 
         if analyze_relocation:
             if not all_modes_put_together:
@@ -91,7 +104,6 @@ def analyze_individual_unweighted_networks(analyze_topology_and_GINI=0,
                 print('average relocation =', round(float(relo), 3))
             else:
                 relocation_potential = mptn.path_based_unweighted_relocation(d_max=750)
-                # print(np.mean([rl for node, rl in relocation_potential.items()]))
                 for name in names:
                     relos = [rl for node, rl in relocation_potential.items() if
                              mptn.network.stop_repository[node].label == name]

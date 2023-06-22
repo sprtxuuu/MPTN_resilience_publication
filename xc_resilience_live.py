@@ -562,7 +562,7 @@ class Resilience:
         gcc = sorted(nx.strongly_connected_components(temp_g), key=len, reverse=True)
         n_g0 = temp_g.subgraph(gcc[0]).number_of_nodes()
         removed_list, degradation_curve = [], [n_g0 / n0]
-        print('n_g0 / n0 :', n_g0 / n0)
+        # print('n_g0 / n0 :', n_g0 / n0)
         step = 0
         while node_list:
             if strategy == 'node_degree':

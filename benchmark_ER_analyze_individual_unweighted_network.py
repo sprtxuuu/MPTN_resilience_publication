@@ -21,7 +21,6 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
                 stop.show()
             if print_items:
                 print(stop.label)
-
     all_modes = [['MTR'],
                  ['CTB', 'KMB+CTB', 'KMB', 'NLB', 'PI', 'LWB', 'DB', 'LRTFeeder', 'KMB+NWFB', 'LWB+CTB', 'NWFB', 'XB'],
                  ['GMB'],
@@ -30,39 +29,33 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
                  ['TRAM']]
 
     names = ['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM']
-    # for i in range(6):
     for i in [0, 1, 2, 3, 4, 5]:
+        # import network model
         mode = all_modes[i]
         modes_to_remove = [item for item in all_modes if item != mode]
-
-        # import mptn network model
         mptn = create_mptn_model()
         check_stop_label()
-        # print(mptn.G.number_of_nodes(), mptn.G.number_of_edges(), len(mptn.network.functional_stop_list()))
         for item in modes_to_remove:
             for subitem in item:
                 mptn.network.remove_routes_by_agency(subitem)
         mptn.update_graph_by_routes_data()
-        # mptn.network.show()
-
         from benchmark_ER_expanding_unweighted_network import geospatial_efficiency, edge_length_distribution
-
         if analyze_topology_and_GINI:
             node_coordinates = {id: stop.coordinates() for id, stop in mptn.network.stop_repository.items()}
-            # preps = [['Label', '|V|', '|E|', 'GINI_nd', 'GINI_bc', 'GE', 'E', 'AEL', 'STDEL']]
-            preps = [['Label', '|V|', '|E|', 'GINI_nd', 'GE', 'E', 'AEL', 'STDEL']]
+            preps = [['Label', '|V|', '|E|', 'GINI_nd', 'GINI_bc', 'GE', 'E', 'AEL', 'STDEL']]
+            # preps = [['Label', '|V|', '|E|', 'GINI_nd', 'GE', 'E', 'AEL', 'STDEL']]
             ael, stdel, samples = edge_length_distribution(mptn.G, node_coordinates)
             preps.append(['System',
                           mptn.G.number_of_nodes(),
                           mptn.G.number_of_edges(),
                           round(mptn.preparedness_node_degree_gini(), 4),
-                          # round(mptn.preparedness_node_betweenness_centrality_gini(), 4),
+                          round(mptn.preparedness_node_betweenness_centrality_gini(), 4),
                           geospatial_efficiency(mptn.G, node_coordinates),
                           xc.global_efficiency_modified_for_unconnected_digragh(mptn.G),
                           ael, stdel])
             for line in preps:
                 print(line)
-            for nb in range(100):
+            for nb in range(50):
                 print(nb)
                 BG = xc.create_ER_benchmark_for_graph(G=mptn.G, seed=nb, undirected_benchmark=True,
                                                       average_edge_length=ael, std_edge_length=stdel,
@@ -70,7 +63,6 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
                                                       samples=samples).to_directed()
                 mptn.G = BG
                 ael_t, stdel_t, samples_t = edge_length_distribution(mptn.G, node_coordinates)
-                # mptn.plot(show=False, node_size=20, arrowsize=10, save_path=f'sample_{nb}.png')
                 preps.append(['Benchmark',
                               mptn.G.number_of_nodes(),
                               mptn.G.number_of_edges(),
@@ -79,10 +71,9 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
                               geospatial_efficiency(mptn.G, node_coordinates),
                               xc.global_efficiency_modified_for_unconnected_digragh(mptn.G),
                               ael_t, stdel_t])
-                for line in preps:
-                    print(line)
-            # xc.export_list(xp_list=preps,filename=f'Benchmark_ER_results/{names[i]}.csv')
+                print(preps[-1])
             xc.export_list(xp_list=preps, filename=f'Benchmark_gs_ER_results/{names[i]}_geospatial_efficiency.csv')
+
         if analyze_node_metric_distribution:
             plot_centrality_distribution(mptn,
                                          save_figure_as=f'Benchmark_gs_ER_results/fig_centrality_distribution_{names[i]}.png', )
@@ -116,4 +107,5 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
 
 if __name__ == "__main__":
     benchmark_individual_unweighted_network(analyze_topology_and_GINI=1,
-                                            analyze_node_metric_distribution=1)
+                                            analyze_node_metric_distribution=1,
+                                            analyze_rb=0)

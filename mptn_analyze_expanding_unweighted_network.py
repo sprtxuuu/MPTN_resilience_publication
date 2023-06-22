@@ -76,11 +76,9 @@ def analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
                 nd = round(mptn.preparedness_node_degree_gini(), 4)
                 bc = round(mptn.preparedness_node_betweenness_centrality_gini(), 4)
                 from benchmark_ER_expanding_unweighted_network import geospatial_efficiency, edge_length_distribution
-
                 node_coordinates = {id: stop.coordinates() for id, stop in mptn.network.stop_repository.items()}
                 ael, stdel, samples = edge_length_distribution(mptn.G, node_coordinates)
                 from networkx import strongly_connected_components
-
                 gcc = sorted(strongly_connected_components(mptn.G), key=len, reverse=True)
                 n_g0 = mptn.G.subgraph(gcc[0]).number_of_nodes()
                 prop = [['|V| = ', v],
@@ -140,13 +138,20 @@ def analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
         if analyze_relocation:
             if (not complete_mptn_only) or (complete_mptn_only and i == 5):
                 relocation_potential = mptn.path_based_unweighted_relocation(d_max=d_max)
-                relo = np.mean([rl for node, rl in relocation_potential.items()])
+                relos = [rl for node, rl in relocation_potential.items()]
+                if relos:
+                    relo = np.mean(relos)
+                else:
+                    relo = 'nan'
                 print('global average relocation =', round(float(relo), 3))
                 for name in names:
                     relos = [rl for node, rl in relocation_potential.items() if
                              mptn.network.stop_repository[node].label == name]
                     print(name, len(relos))
-                    relo = np.mean(relos)
+                    if relos:
+                        relo = np.mean(relos)
+                    else:
+                        relo = 'nan'
                     print('average relocation =', round(float(relo), 3))
                 export_attribute_in_stop_list(mptn, attribute_dict=relocation_potential,
                                               path_to_file=f'mptn_analyze_expanding_unweighted_network_results/'
@@ -178,13 +183,30 @@ if __name__ == '__main__':
                                          analyze_node_metric_distribution=1,
                                          analyze_rb=1,
                                          imt_edges=0,
-                                         analyze_relocation=1,
+                                         analyze_relocation=0,
                                          d_max=750,
                                          complete_mptn_only=0)
 
     analyze_expanding_unweighted_network(analyze_topology_and_GINI=1,
                                          analyze_node_metric_distribution=1,
                                          analyze_rb=1,
+                                         imt_edges=1,
+                                         analyze_relocation=0,
+                                         d_max=750,
+                                         complete_mptn_only=0)
+
+    # relocation analysis
+    analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
+                                         analyze_node_metric_distribution=0,
+                                         analyze_rb=0,
+                                         imt_edges=0,
+                                         analyze_relocation=1,
+                                         d_max=750,
+                                         complete_mptn_only=0)
+
+    analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
+                                         analyze_node_metric_distribution=0,
+                                         analyze_rb=0,
                                          imt_edges=1,
                                          analyze_relocation=1,
                                          d_max=750,

@@ -55,7 +55,6 @@ def plot_rb_curves(path_to_files, fig_name, curves_name=None):
 
 
 def plot_centrality_distribution(resilience_framework, save_figure_as='fig_centrality_distribution.png'):
-    figure = plt.figure(figsize=(6, 4))
     centralities_dict = resilience_framework.get_node_betweenness_centrality()
     censeq = list(centralities_dict.values())
     cmax, dec = 1, 3  # cmax = round(max(censeq) + 0.1, 0)
@@ -63,7 +62,7 @@ def plot_centrality_distribution(resilience_framework, save_figure_as='fig_centr
     for c in censeq:
         bin = round(c, dec)
         freq[int(bin * (10 ** dec))] += 1
-    plt.figure(figsize=(6, 4))
+    plt.figure(figsize=(4.5,3.5))
     plt.loglog(np.arange(0, cmax, 0.1 ** dec), freq, 'ko', fillstyle="none", label='$c_B$')
     plt.xlabel('Betweenness centrality $c_B$')
     plt.ylabel('Frequency')
@@ -72,7 +71,6 @@ def plot_centrality_distribution(resilience_framework, save_figure_as='fig_centr
 
 
 def plot_degree_distribution(resilience_framework, save_figure_as='fig_degree_distribution.png'):
-    figure = plt.figure(figsize=(6, 4))
     degree_dict = resilience_framework.get_node_degree()
     degseq = list(degree_dict.values())
     cmax = max(degseq)
@@ -80,7 +78,7 @@ def plot_degree_distribution(resilience_framework, save_figure_as='fig_degree_di
     for c in degseq:
         bin = c
         freq[int(bin)] += 1
-    plt.figure(figsize=(6, 4))
+    plt.figure(figsize=(4.5,3.5))
     plt.loglog(np.arange(0, cmax + 1, 1), freq, 'ko', fillstyle="none", label='$k$')
     plt.xlabel('Node degree $k$')
     plt.ylabel('Frequency')
