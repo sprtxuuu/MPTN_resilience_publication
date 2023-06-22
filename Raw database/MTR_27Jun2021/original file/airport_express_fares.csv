@@ -1,0 +1,15 @@
+"ST_FROM","ST_FROM_ID","ST_TO","ST_TO_ID","OCT_ADT_FARE","OCT_CHD_FARE","SINGLE_ADT_FARE","SINGLE_CHD_FARE"
+"HongKong",44,"Airport",47,110.00,55.00,115.00,57.50
+"HongKong",44,"AsiaWorld-Expo",56,110.00,55.00,115.00,57.50
+"Kowloon",45,"Airport",47,100.00,50.00,105.00,52.50
+"Kowloon",45,"AsiaWorld-Expo",56,100.00,50.00,105.00,52.50
+"Tsing Yi",46,"Airport",47,65.00,32.50,70.00,35.00
+"Tsing Yi",46,"AsiaWorld-Expo",56,65.00,32.50,70.00,35.00
+"Airport",47,"HongKong",44,110.00,55.00,115.00,57.50
+"Airport",47,"Kowloon",45,100.00,50.00,105.00,52.50
+"Airport",47,"Tsing Yi",46,65.00,32.50,70.00,35.00
+"Airport",47,"AsiaWorld-Expo",56,5.50,2.70,6.00,3.00
+"AsiaWorld-Expo",56,"HongKong",44,110.00,55.00,115.00,57.50
+"AsiaWorld-Expo",56,"Kowloon",45,100.00,50.00,105.00,52.50
+"AsiaWorld-Expo",56,"Tsing Yi",46,65.00,32.50,70.00,35.00
+"AsiaWorld-Expo",56,"Airport",47,5.50,2.70,6.00,3.00

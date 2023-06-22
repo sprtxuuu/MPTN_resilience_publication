@@ -1,0 +1,263 @@
+Line Code,Direction,Station Code,Station ID,Chinese Name,English Name,Sequence,Line-Direction
+AEL,DT,AWE,56,博覽館,AsiaWorld-Expo,1,AEL-DT
+AEL,DT,AIR,47,機場,Airport,2,AEL-DT
+AEL,DT,TSY,46,青衣,Tsing Yi,3,AEL-DT
+AEL,DT,KOW,45,九龍,Kowloon,4,AEL-DT
+AEL,DT,HOK,44,香港,Hong Kong,5,AEL-DT
+AEL,UT,HOK,44,香港,Hong Kong,1,AEL-UT
+AEL,UT,KOW,45,九龍,Kowloon,2,AEL-UT
+AEL,UT,TSY,46,青衣,Tsing Yi,3,AEL-UT
+AEL,UT,AIR,47,機場,Airport,4,AEL-UT
+AEL,UT,AWE,56,博覽館,AsiaWorld-Expo,5,AEL-UT
+DRL,DT,SUN,54,欣澳,Sunny Bay,1,DRL-DT
+DRL,DT,DIS,55,迪士尼,Disneyland Resort,2,DRL-DT
+DRL,UT,DIS,55,迪士尼,Disneyland Resort,1,DRL-UT
+DRL,UT,SUN,54,欣澳,Sunny Bay,2,DRL-UT
+EAL,DT,LOW,76,羅湖,Lo Wu,1,EAL-DT
+EAL,DT,SHS,75,上水,Sheung Shui,2,EAL-DT
+EAL,DT,FAN,74,粉嶺,Fanling,3,EAL-DT
+EAL,DT,TWO,73,太和,Tai Wo,4,EAL-DT
+EAL,DT,TAP,72,大埔墟,Tai Po Market,5,EAL-DT
+EAL,DT,UNI,71,大學,University,6,EAL-DT
+EAL,DT,FOT,69,火炭,Fo Tan,7,EAL-DT
+EAL,DT,SHT,68,沙田,Sha Tin,8,EAL-DT
+EAL,DT,TAW,67,大圍,Tai Wai,9,EAL-DT
+EAL,DT,KOT,8,九龍塘,Kowloon Tong,10,EAL-DT
+EAL,DT,MKK,65,旺角東,Mong Kok East,11,EAL-DT
+EAL,DT,HUH,64,紅磡,Hung Hom,12,EAL-DT
+EAL,LMC-DT,LMC,78,落馬洲,Lok Ma Chau,1,EAL-LMC-DT
+EAL,LMC-DT,SHS,75,上水,Sheung Shui,2,EAL-LMC-DT
+EAL,LMC-DT,FAN,74,粉嶺,Fanling,3,EAL-LMC-DT
+EAL,LMC-DT,TWO,73,太和,Tai Wo,4,EAL-LMC-DT
+EAL,LMC-DT,TAP,72,大埔墟,Tai Po Market,5,EAL-LMC-DT
+EAL,LMC-DT,UNI,71,大學,University,6,EAL-LMC-DT
+EAL,LMC-DT,FOT,69,火炭,Fo Tan,7,EAL-LMC-DT
+EAL,LMC-DT,SHT,68,沙田,Sha Tin,8,EAL-LMC-DT
+EAL,LMC-DT,TAW,67,大圍,Tai Wai,9,EAL-LMC-DT
+EAL,LMC-DT,KOT,8,九龍塘,Kowloon Tong,10,EAL-LMC-DT
+EAL,LMC-DT,MKK,65,旺角東,Mong Kok East,11,EAL-LMC-DT
+EAL,LMC-DT,HUH,64,紅磡,Hung Hom,12,EAL-LMC-DT
+EAL,LMC-UT,HUH,64,紅磡,Hung Hom,1,EAL-LMC-UT
+EAL,LMC-UT,MKK,65,旺角東,Mong Kok East,2,EAL-LMC-UT
+EAL,LMC-UT,KOT,8,九龍塘,Kowloon Tong,3,EAL-LMC-UT
+EAL,LMC-UT,TAW,67,大圍,Tai Wai,4,EAL-LMC-UT
+EAL,LMC-UT,SHT,68,沙田,Sha Tin,5,EAL-LMC-UT
+EAL,LMC-UT,FOT,69,火炭,Fo Tan,6,EAL-LMC-UT
+EAL,LMC-UT,UNI,71,大學,University,7,EAL-LMC-UT
+EAL,LMC-UT,TAP,72,大埔墟,Tai Po Market,8,EAL-LMC-UT
+EAL,LMC-UT,TWO,73,太和,Tai Wo,9,EAL-LMC-UT
+EAL,LMC-UT,FAN,74,粉嶺,Fanling,10,EAL-LMC-UT
+EAL,LMC-UT,SHS,75,上水,Sheung Shui,11,EAL-LMC-UT
+EAL,LMC-UT,LMC,78,落馬洲,Lok Ma Chau,12,EAL-LMC-UT
+EAL,UT,HUH,64,紅磡,Hung Hom,1,EAL-UT
+EAL,UT,MKK,65,旺角東,Mong Kok East,2,EAL-UT
+EAL,UT,KOT,8,九龍塘,Kowloon Tong,3,EAL-UT
+EAL,UT,TAW,67,大圍,Tai Wai,4,EAL-UT
+EAL,UT,SHT,68,沙田,Sha Tin,5,EAL-UT
+EAL,UT,FOT,69,火炭,Fo Tan,6,EAL-UT
+EAL,UT,UNI,71,大學,University,7,EAL-UT
+EAL,UT,TAP,72,大埔墟,Tai Po Market,8,EAL-UT
+EAL,UT,TWO,73,太和,Tai Wo,9,EAL-UT
+EAL,UT,FAN,74,粉嶺,Fanling,10,EAL-UT
+EAL,UT,SHS,75,上水,Sheung Shui,11,EAL-UT
+EAL,UT,LOW,76,羅湖,Lo Wu,12,EAL-UT
+ISL,DT,CHW,37,柴灣,Chai Wan,1,ISL-DT
+ISL,DT,HFC,36,杏花邨,Heng Fa Chuen,2,ISL-DT
+ISL,DT,SKW,35,筲箕灣,Shau Kei Wan,3,ISL-DT
+ISL,DT,SWH,34,西灣河,Sai Wan Ho,4,ISL-DT
+ISL,DT,TAK,33,太古,Tai Koo,5,ISL-DT
+ISL,DT,QUB,32,鰂魚涌,Quarry Bay,6,ISL-DT
+ISL,DT,NOP,31,北角,North Point,7,ISL-DT
+ISL,DT,FOH,30,炮台山,Fortress Hill,8,ISL-DT
+ISL,DT,TIH,29,天后,Tin Hau,9,ISL-DT
+ISL,DT,CAB,28,銅鑼灣,Causeway Bay,10,ISL-DT
+ISL,DT,WAC,27,灣仔,Wan Chai,11,ISL-DT
+ISL,DT,ADM,2,金鐘,Admiralty,12,ISL-DT
+ISL,DT,CEN,1,中環,Central,13,ISL-DT
+ISL,DT,SHW,26,上環,Sheung Wan,14,ISL-DT
+ISL,DT,SYP,81,西營盤,Sai Ying Pun,15,ISL-DT
+ISL,DT,HKU,82,香港大學,HKU,16,ISL-DT
+ISL,DT,KET,83,堅尼地城,Kennedy Town,17,ISL-DT
+ISL,UT,KET,83,堅尼地城,Kennedy Town,1,ISL-UT
+ISL,UT,HKU,82,香港大學,HKU,2,ISL-UT
+ISL,UT,SYP,81,西營盤,Sai Ying Pun,3,ISL-UT
+ISL,UT,SHW,26,上環,Sheung Wan,4,ISL-UT
+ISL,UT,CEN,1,中環,Central,5,ISL-UT
+ISL,UT,ADM,2,金鐘,Admiralty,6,ISL-UT
+ISL,UT,WAC,27,灣仔,Wan Chai,7,ISL-UT
+ISL,UT,CAB,28,銅鑼灣,Causeway Bay,8,ISL-UT
+ISL,UT,TIH,29,天后,Tin Hau,9,ISL-UT
+ISL,UT,FOH,30,炮台山,Fortress Hill,10,ISL-UT
+ISL,UT,NOP,31,北角,North Point,11,ISL-UT
+ISL,UT,QUB,32,鰂魚涌,Quarry Bay,12,ISL-UT
+ISL,UT,TAK,33,太古,Tai Koo,13,ISL-UT
+ISL,UT,SWH,34,西灣河,Sai Wan Ho,14,ISL-UT
+ISL,UT,SKW,35,筲箕灣,Shau Kei Wan,15,ISL-UT
+ISL,UT,HFC,36,杏花邨,Heng Fa Chuen,16,ISL-UT
+ISL,UT,CHW,37,柴灣,Chai Wan,17,ISL-UT
+KTL,DT,TIK,49,調景嶺,Tiu Keng Leng,1,KTL-DT
+KTL,DT,YAT,48,油塘,Yau Tong,2,KTL-DT
+KTL,DT,LAT,38,藍田,Lam Tin,3,KTL-DT
+KTL,DT,KWT,15,觀塘,Kwun Tong,4,KTL-DT
+KTL,DT,NTK,14,牛頭角,Ngau Tau Kok,5,KTL-DT
+KTL,DT,KOB,13,九龍灣,Kowloon Bay,6,KTL-DT
+KTL,DT,CHH,12,彩虹,Choi Hung,7,KTL-DT
+KTL,DT,DIH,11,鑽石山,Diamond Hill,8,KTL-DT
+KTL,DT,WTS,10,黃大仙,Wong Tai Sin,9,KTL-DT
+KTL,DT,LOF,9,樂富,Lok Fu,10,KTL-DT
+KTL,DT,KOT,8,九龍塘,Kowloon Tong,11,KTL-DT
+KTL,DT,SKM,7,石硤尾,Shek Kip Mei,12,KTL-DT
+KTL,DT,PRE,16,太子,Prince Edward,13,KTL-DT
+KTL,DT,MOK,6,旺角,Mong Kok,14,KTL-DT
+KTL,DT,YMT,5,油麻地,Yau Ma Tei,15,KTL-DT
+KTL,DT,HOM,84,何文田,Ho Man Tin,16,KTL-DT
+KTL,DT,WHA,85,黃埔,Whampo,17,KTL-DT
+KTL,UT,WHA,85,黃埔,Whampo,1,KTL-UT
+KTL,UT,HOM,84,何文田,Ho Man Tin,2,KTL-UT
+KTL,UT,YMT,5,油麻地,Yau Ma Tei,3,KTL-UT
+KTL,UT,MOK,6,旺角,Mong Kok,4,KTL-UT
+KTL,UT,PRE,16,太子,Prince Edward,5,KTL-UT
+KTL,UT,SKM,7,石硤尾,Shek Kip Mei,6,KTL-UT
+KTL,UT,KOT,8,九龍塘,Kowloon Tong,7,KTL-UT
+KTL,UT,LOF,9,樂富,Lok Fu,8,KTL-UT
+KTL,UT,WTS,10,黃大仙,Wong Tai Sin,9,KTL-UT
+KTL,UT,DIH,11,鑽石山,Diamond Hill,10,KTL-UT
+KTL,UT,CHH,12,彩虹,Choi Hung,11,KTL-UT
+KTL,UT,KOB,13,九龍灣,Kowloon Bay,12,KTL-UT
+KTL,UT,NTK,14,牛頭角,Ngau Tau Kok,13,KTL-UT
+KTL,UT,KWT,15,觀塘,Kwun Tong,14,KTL-UT
+KTL,UT,LAT,38,藍田,Lam Tin,15,KTL-UT
+KTL,UT,YAT,48,油塘,Yau Tong,16,KTL-UT
+KTL,UT,TIK,49,調景嶺,Tiu Keng Leng,17,KTL-UT
+TML,UT,WKS,103,烏溪沙,Wu Kai Sha,1,TML-UT
+TML,UT,MOS,102,馬鞍山,Ma On Shan,2,TML-UT
+TML,UT,HEO,101,恆安,Heng On,3,TML-UT
+TML,UT,TSH,100,大水坑,Tai Shui Hang,4,TML-UT
+TML,UT,SHM,99,石門,Shek Mun,5,TML-UT
+TML,UT,CIO,98,第一城,City One,6,TML-UT
+TML,UT,STW,97,沙田圍,Sha Tin Wai,7,TML-UT
+TML,UT,CKT,96,車公廟,Che Kung Temple,8,TML-UT
+TML,UT,TAW,67,大圍,Tai Wai,9,TML-UT
+TML,UT,HIK,90,顯徑,Hin Keng,10,TML-UT
+TML,UT,DIH,11,鑽石山,Diamond Hill,11,TML-UT
+TML,UT,KAT,91,啟德,Kai Tak,12,TML-UT
+TML,UT,SUW,92,宋皇臺,Sung Wong Toi,13,TML-UT
+TML,UT,TKW,93,土瓜灣,To Kwa Wan,14,TML-UT
+TML,UT,HOM,84,何文田,Ho Man Tin,15,TML-UT
+TML,UT,HUH,64,紅磡,Hung Hom,16,TML-UT
+TML,UT,ETS,80,尖東,East Tsim Sha Tsui,17,TML-UT
+TML,UT,AUS,111,柯士甸,Austin,18,TML-UT
+TML,UT,NAC,53,南昌,Nam Cheong,19,TML-UT
+TML,UT,MEF,20,美孚,Mei Foo,20,TML-UT
+TML,UT,TWW,114,荃灣西,Tsuen Wan West,21,TML-UT
+TML,UT,KSR,115,錦上路,Kam Sheung Road,22,TML-UT
+TML,UT,YUL,116,元朗,Yuen Long,23,TML-UT
+TML,UT,LOP,117,朗屏,Long Ping,24,TML-UT
+TML,UT,TIS,118,天水圍,Tin Shui Wai,25,TML-UT
+TML,UT,SIH,119,兆康,Siu Hong,26,TML-UT
+TML,UT,TUM,120,屯門,Tuen Mun,27,TML-UT
+TML,DT,TUM,120,屯門,Tuen Mun,1,TML-DT
+TML,DT,SIH,119,兆康,Siu Hong,2,TML-DT
+TML,DT,TIS,118,天水圍,Tin Shui Wai,3,TML-DT
+TML,DT,LOP,117,朗屏,Long Ping,4,TML-DT
+TML,DT,YUL,116,元朗,Yuen Long,5,TML-DT
+TML,DT,KSR,115,錦上路,Kam Sheung Road,6,TML-DT
+TML,DT,TWW,114,荃灣西,Tsuen Wan West,7,TML-DT
+TML,DT,MEF,20,美孚,Mei Foo,8,TML-DT
+TML,DT,NAC,53,南昌,Nam Cheong,9,TML-DT
+TML,DT,AUS,111,柯士甸,Austin,10,TML-DT
+TML,DT,ETS,80,尖東,East Tsim Sha Tsui,11,TML-DT
+TML,DT,HUH,64,紅磡,Hung Hom,12,TML-DT
+TML,DT,HOM,84,何文田,Ho Man Tin,13,TML-DT
+TML,DT,TKW,93,土瓜灣,To Kwa Wan,14,TML-DT
+TML,DT,SUW,92,宋皇臺,Sung Wong Toi,15,TML-DT
+TML,DT,KAT,91,啟德,Kai Tak,16,TML-DT
+TML,DT,DIH,11,鑽石山,Diamond Hill,17,TML-DT
+TML,DT,HIK,90,顯徑,Hin Keng,18,TML-DT
+TML,DT,TAW,67,大圍,Tai Wai,19,TML-DT
+TML,DT,CKT,96,車公廟,Che Kung Temple,20,TML-DT
+TML,DT,STW,97,沙田圍,Sha Tin Wai,21,TML-DT
+TML,DT,CIO,98,第一城,City One,22,TML-DT
+TML,DT,SHM,99,石門,Shek Mun,23,TML-DT
+TML,DT,TSH,100,大水坑,Tai Shui Hang,24,TML-DT
+TML,DT,HEO,101,恆安,Heng On,25,TML-DT
+TML,DT,MOS,102,馬鞍山,Ma On Shan,26,TML-DT
+TML,DT,WKS,103,烏溪沙,Wu Kai Sha,27,TML-DT
+TCL,DT,TUC,43,東涌,Tung Chung,1,TCL-DT
+TCL,DT,SUN,54,欣澳,Sunny Bay,2,TCL-DT
+TCL,DT,TSY,42,青衣,Tsing Yi,3,TCL-DT
+TCL,DT,LAK,21,茘景,Lai King,4,TCL-DT
+TCL,DT,NAC,53,南昌,Nam Cheong,5,TCL-DT
+TCL,DT,OLY,41,奧運,Olympic,6,TCL-DT
+TCL,DT,KOW,40,九龍,Kowloon,7,TCL-DT
+TCL,DT,HOK,39,香港,Hong Kong,8,TCL-DT
+TCL,UT,HOK,39,香港,Hong Kong,1,TCL-UT
+TCL,UT,KOW,40,九龍,Kowloon,2,TCL-UT
+TCL,UT,OLY,41,奧運,Olympic,3,TCL-UT
+TCL,UT,NAC,53,南昌,Nam Cheong,4,TCL-UT
+TCL,UT,LAK,21,茘景,Lai King,5,TCL-UT
+TCL,UT,TSY,42,青衣,Tsing Yi,6,TCL-UT
+TCL,UT,SUN,54,欣澳,Sunny Bay,7,TCL-UT
+TCL,UT,TUC,43,東涌,Tung Chung,8,TCL-UT
+TKL,DT,POA,52,寶琳,Po Lam,1,TKL-DT
+TKL,DT,HAH,51,坑口,Hang Hau,2,TKL-DT
+TKL,DT,TKO,50,將軍澳,Tseung Kwan O,3,TKL-DT
+TKL,DT,TIK,49,調景嶺,Tiu Keng Leng,4,TKL-DT
+TKL,DT,YAT,48,油塘,Yau Tong,5,TKL-DT
+TKL,DT,QUB,32,鰂魚涌,Quarry Bay,6,TKL-DT
+TKL,DT,NOP,31,北角,North Point,7,TKL-DT
+TKL,TKS-DT,LHP,57,康城,LOHAS Park,1,TKL-TKS-DT
+TKL,TKS-DT,TKO,50,將軍澳,Tseung Kwan O,2,TKL-TKS-DT
+TKL,TKS-DT,TIK,49,調景嶺,Tiu Keng Leng,3,TKL-TKS-DT
+TKL,TKS-UT,TIK,49,調景嶺,Tiu Keng Leng,1,TKL-TKS-UT
+TKL,TKS-UT,TKO,50,將軍澳,Tseung Kwan O,2,TKL-TKS-UT
+TKL,TKS-UT,LHP,57,康城,LOHAS Park,3,TKL-TKS-UT
+TKL,UT,NOP,31,北角,North Point,1,TKL-UT
+TKL,UT,QUB,32,鰂魚涌,Quarry Bay,2,TKL-UT
+TKL,UT,YAT,48,油塘,Yau Tong,3,TKL-UT
+TKL,UT,TIK,49,調景嶺,Tiu Keng Leng,4,TKL-UT
+TKL,UT,TKO,50,將軍澳,Tseung Kwan O,5,TKL-UT
+TKL,UT,HAH,51,坑口,Hang Hau,6,TKL-UT
+TKL,UT,POA,52,寶琳,Po Lam,7,TKL-UT
+TWL,DT,TSW,25,荃灣,Tsuen Wan,1,TWL-DT
+TWL,DT,TWH,24,大窩口,Tai Wo Hau,2,TWL-DT
+TWL,DT,KWH,23,葵興,Kwai Hing,3,TWL-DT
+TWL,DT,KWF,22,葵芳,Kwai Fong,4,TWL-DT
+TWL,DT,LAK,21,茘景,Lai King,5,TWL-DT
+TWL,DT,MEF,20,美孚,Mei Foo,6,TWL-DT
+TWL,DT,LCK,19,茘枝角,Lai Chi Kok,7,TWL-DT
+TWL,DT,CSW,18,長沙灣,Cheung Sha Wan,8,TWL-DT
+TWL,DT,SSP,17,深水埗,Sham Shui Po,9,TWL-DT
+TWL,DT,PRE,16,太子,Prince Edward,10,TWL-DT
+TWL,DT,MOK,6,旺角,Mong Kok,11,TWL-DT
+TWL,DT,YMT,5,油麻地,Yau Ma Tei,12,TWL-DT
+TWL,DT,JOR,4,佐敦,Jordan,13,TWL-DT
+TWL,DT,TST,3,尖沙咀,Tsim Sha Tsui,14,TWL-DT
+TWL,DT,ADM,2,金鐘,Admiralty,15,TWL-DT
+TWL,DT,CEN,1,中環,Central,16,TWL-DT
+TWL,UT,CEN,1,中環,Central,1,TWL-UT
+TWL,UT,ADM,2,金鐘,Admiralty,2,TWL-UT
+TWL,UT,TST,3,尖沙咀,Tsim Sha Tsui,3,TWL-UT
+TWL,UT,JOR,4,佐敦,Jordan,4,TWL-UT
+TWL,UT,YMT,5,油麻地,Yau Ma Tei,5,TWL-UT
+TWL,UT,MOK,6,旺角,Mong Kok,6,TWL-UT
+TWL,UT,PRE,16,太子,Prince Edward,7,TWL-UT
+TWL,UT,SSP,17,深水埗,Sham Shui Po,8,TWL-UT
+TWL,UT,CSW,18,長沙灣,Cheung Sha Wan,9,TWL-UT
+TWL,UT,LCK,19,茘枝角,Lai Chi Kok,10,TWL-UT
+TWL,UT,MEF,20,美孚,Mei Foo,11,TWL-UT
+TWL,UT,LAK,21,茘景,Lai King,12,TWL-UT
+TWL,UT,KWF,22,葵芳,Kwai Fong,13,TWL-UT
+TWL,UT,KWH,23,葵興,Kwai Hing,14,TWL-UT
+TWL,UT,TWH,24,大窩口,Tai Wo Hau,15,TWL-UT
+TWL,UT,TSW,25,荃灣,Tsuen Wan,16,TWL-UT
+SIL,UT,ADM,2,金鐘,Admiralty,1,SIL-UT
+SIL,UT,OCP,86,海洋公園,Ocean Park,2,SIL-UT
+SIL,UT,WCH,87,黃竹坑,Wong Chuk Hang,3,SIL-UT
+SIL,UT,LET,88,利東,Lei Tung,4,SIL-UT
+SIL,UT,SOH,89,海怡半島,South Horizons,5,SIL-UT
+SIL,DT,SOH,89,海怡半島,South Horizons,1,SIL-DT
+SIL,DT,LET,88,利東,Lei Tung,2,SIL-DT
+SIL,DT,WCH,87,黃竹坑,Wong Chuk Hang,3,SIL-DT
+SIL,DT,OCP,86,海洋公園,Ocean Park,4,SIL-DT
+SIL,DT,ADM,2,金鐘,Admiralty,5,SIL-DT
