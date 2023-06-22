@@ -2,7 +2,7 @@
 
 Authors: Zizhen Xu, Shauhrat S. Chopra*
 
-Email: S.S.C. <sschopra@cityu.edu.hk>, X.Z. <zizhenxu2@cityu.edu.hk>
+Email: S.S.C. <sschopra@cityu.edu.hk>, Z.X. <zizhenxu2@cityu.edu.hk>
 
 
 
