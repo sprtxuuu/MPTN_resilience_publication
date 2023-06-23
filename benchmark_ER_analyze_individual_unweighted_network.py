@@ -107,5 +107,5 @@ def benchmark_individual_unweighted_network(analyze_topology_and_GINI=0,
 
 if __name__ == "__main__":
     benchmark_individual_unweighted_network(analyze_topology_and_GINI=1,
-                                            analyze_node_metric_distribution=1,
+                                            analyze_node_metric_distribution=0,
                                             analyze_rb=0)

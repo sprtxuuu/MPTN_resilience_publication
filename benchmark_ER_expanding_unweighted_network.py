@@ -134,7 +134,7 @@ def benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
                           geospatial_efficiency(mptn.G, node_coordinates),
                           xc.global_efficiency_modified_for_unconnected_digragh(mptn.G),
                           ael, stdel])
-            for nb in range(100):
+            for nb in range(50):
                 BG = xc.create_ER_benchmark_for_graph(G=mptn.G, seed=nb, undirected_benchmark=True,
                                                       dict_of_node_lat_lon=node_coordinates,
                                                       samples=samples
@@ -165,7 +165,7 @@ def benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
             print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
             node_coordinates = {id: stop.coordinates() for id, stop in mptn.network.stop_repository.items()}
             ael, stdel, samples = edge_length_distribution(mptn.G, node_coordinates)
-            for nb in range(100):
+            for nb in range(50):
                 BG = xc.create_ER_benchmark_for_graph(G=mptn.G, seed=nb, undirected_benchmark=True,
                                                       average_edge_length=ael, std_edge_length=stdel,
                                                       dict_of_node_lat_lon=node_coordinates,
@@ -175,7 +175,7 @@ def benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
                 rb_n_steps = 20
                 rb_step_size = round(mptn.G.number_of_nodes() / rb_n_steps)
                 if imt_edges:
-                    xc.export_list(mptn.robustness_unweighted_random_attack(number_of_tests=100,
+                    xc.export_list(mptn.robustness_unweighted_random_attack(number_of_tests=1000,
                                                                             multiple_removal=rb_step_size,
                                                                             multi_processing=True),
                                    filename=f'Benchmark_gs_ER_results/robustness/mptn_imt_100_expanding_{i}_rb_rnd_{nb}.csv')
@@ -188,7 +188,7 @@ def benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
                                                                                        number_of_tests=10),
                                    filename=f'Benchmark_gs_ER_results/robustness/mptn_imt_100_expanding_{i}_rb_bc_{nb}.csv')
                 else:
-                    xc.export_list(mptn.robustness_unweighted_random_attack(number_of_tests=100,
+                    xc.export_list(mptn.robustness_unweighted_random_attack(number_of_tests=1000,
                                                                             multiple_removal=rb_step_size,
                                                                             multi_processing=True),
                                    filename=f'Benchmark_gs_ER_results/robustness/mptn_imt_0_expanding_{i}_rb_rnd_{nb}.csv')
@@ -205,11 +205,11 @@ def benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
 
 if __name__ == "__main__":
     benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
-                                           analyze_node_metric_distribution=1,
+                                           analyze_node_metric_distribution=0,
                                            analyze_rb=1,
                                            imt_edges=0)
 
     benchmark_expanding_unweighted_network(analyze_topology_and_GINI=1,
-                                           analyze_node_metric_distribution=1,
+                                           analyze_node_metric_distribution=0,
                                            analyze_rb=1,
                                            imt_edges=1)

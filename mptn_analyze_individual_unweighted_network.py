@@ -76,9 +76,9 @@ def analyze_individual_unweighted_networks(analyze_topology_and_GINI=0,
 
         if analyze_node_metric_distribution:
             plot_centrality_distribution(mptn,
-                                         save_figure_as=f'mptn_analyze_individual_unweighted_network_results/fig_centrality_distribution_{names[i]}.png', )
+                                         save_figure_as=f'visualization/fig_centrality_distribution_{names[i]}.png', )
             plot_degree_distribution(mptn,
-                                     save_figure_as=f'mptn_analyze_individual_unweighted_network_results/fig_degree_distribution_{names[i]}.png')
+                                     save_figure_as=f'visualization/fig_degree_distribution_{names[i]}.png')
 
         if analyze_rb:
             rb_n_steps = 40

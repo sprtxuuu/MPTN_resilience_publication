@@ -134,7 +134,7 @@ def plot_for_expanding_unweighted_network_results_imt_0():
                     base_path+'/mptn_imt_0_expanding_3_rb_rnd.csv',
                     base_path+'/mptn_imt_0_expanding_4_rb_rnd.csv',
                     base_path+'/mptn_imt_0_expanding_5_rb_rnd.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_0_random_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_0_random_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
     plot_rb_curves([base_path+'/mptn_imt_0_expanding_0_rb_nd.csv',
@@ -143,7 +143,7 @@ def plot_for_expanding_unweighted_network_results_imt_0():
                     base_path+'/mptn_imt_0_expanding_3_rb_nd.csv',
                     base_path+'/mptn_imt_0_expanding_4_rb_nd.csv',
                     base_path+'/mptn_imt_0_expanding_5_rb_nd.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_0_degree_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_0_degree_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
     plot_rb_curves([base_path+'/mptn_imt_0_expanding_0_rb_bc.csv',
@@ -152,7 +152,7 @@ def plot_for_expanding_unweighted_network_results_imt_0():
                     base_path+'/mptn_imt_0_expanding_3_rb_bc.csv',
                     base_path+'/mptn_imt_0_expanding_4_rb_bc.csv',
                     base_path+'/mptn_imt_0_expanding_5_rb_bc.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_0_betweenness_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_0_betweenness_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
 
@@ -164,7 +164,7 @@ def plot_for_expanding_unweighted_network_results_imt_100():
                     base_path+'/mptn_imt_100_expanding_3_rb_rnd.csv',
                     base_path+'/mptn_imt_100_expanding_4_rb_rnd.csv',
                     base_path+'/mptn_imt_100_expanding_5_rb_rnd.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_100_random_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_100_random_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
     plot_rb_curves([base_path+'/mptn_imt_100_expanding_0_rb_nd.csv',
@@ -173,7 +173,7 @@ def plot_for_expanding_unweighted_network_results_imt_100():
                     base_path+'/mptn_imt_100_expanding_3_rb_nd.csv',
                     base_path+'/mptn_imt_100_expanding_4_rb_nd.csv',
                     base_path+'/mptn_imt_100_expanding_5_rb_nd.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_100_degree_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_100_degree_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
     plot_rb_curves([base_path+'/mptn_imt_100_expanding_0_rb_bc.csv',
@@ -182,7 +182,7 @@ def plot_for_expanding_unweighted_network_results_imt_100():
                     base_path+'/mptn_imt_100_expanding_3_rb_bc.csv',
                     base_path+'/mptn_imt_100_expanding_4_rb_bc.csv',
                     base_path+'/mptn_imt_100_expanding_5_rb_bc.csv'],
-                   fig_name=base_path+'/fig_curve_mptn_imt_100_betweenness_attack.png',
+                   fig_name='visualization/fig_mptn_robustness_imt_100_betweenness_attack.png',
                    curves_name=['Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Step 6'])
 
 
@@ -193,7 +193,7 @@ def plot_for_individual_unweighted_network_results():
                     'mptn_analyze_individual_unweighted_network_results/mptn_LR_rb_rnd.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_FERRY_rb_rnd.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_TRAM_rb_rnd.csv'],
-                   fig_name='mptn_analyze_individual_unweighted_network_results/fig_curve_random_attack.png',
+                   fig_name='visualization/fig_individual_robustness_random_attack.png',
                    curves_name=['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM'])
 
     plot_rb_curves(['mptn_analyze_individual_unweighted_network_results/mptn_MTR_rb_nd.csv',
@@ -202,7 +202,7 @@ def plot_for_individual_unweighted_network_results():
                     'mptn_analyze_individual_unweighted_network_results/mptn_LR_rb_nd.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_FERRY_rb_nd.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_TRAM_rb_nd.csv'],
-                   fig_name='mptn_analyze_individual_unweighted_network_results/fig_curve_degree_attack.png',
+                   fig_name='visualization/fig_individual_robustness_degree_attack.png',
                    curves_name=['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM'])
 
     plot_rb_curves(['mptn_analyze_individual_unweighted_network_results/mptn_MTR_rb_bc.csv',
@@ -211,7 +211,7 @@ def plot_for_individual_unweighted_network_results():
                     'mptn_analyze_individual_unweighted_network_results/mptn_LR_rb_bc.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_FERRY_rb_bc.csv',
                     'mptn_analyze_individual_unweighted_network_results/mptn_TRAM_rb_bc.csv'],
-                   fig_name='mptn_analyze_individual_unweighted_network_results/fig_curve_betweenness_attack.png',
+                   fig_name='visualization/fig_individual_robustness_betweenness_attack.png',
                    curves_name=['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM'])
 
 

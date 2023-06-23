@@ -49,7 +49,7 @@ def analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
                  ['TRAM']]
 
     names = ['MTR', 'FB', 'GMB', 'LR', 'FERRY', 'TRAM']
-    log = []
+    # log = []
 
     for i in range(6):
         mode = all_modes[:i + 1]
@@ -153,34 +153,17 @@ def analyze_expanding_unweighted_network(analyze_topology_and_GINI=0,
                     else:
                         relo = 'nan'
                     print('average relocation =', round(float(relo), 3))
+                # optional
                 export_attribute_in_stop_list(mptn, attribute_dict=relocation_potential,
                                               path_to_file=f'mptn_analyze_expanding_unweighted_network_results/'
                                                            f'stop_relocation_IMT_{imt_edges}_relocation_{d_max}_step_{i}.csv')
 
-    xc.export_list(log, 'mptn_analyze_expanding_unweighted_network_results/log.csv')
-    # for dst in dst_range:
-    #     intermodal_edges = mptn.network.generate_intermodal_edges(dst_limit=dst)
-    #     mptn.update_graph_by_routes_data(intermodal_edge_list=intermodal_edges)
-    #     print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
-    #
-    #     # print(len(mptn.network.stops), mptn.G.number_of_nodes(), len(mptn.network.functional_stop_list()))
-    #
-    #     # visualization
-    #     # mptn.plot(show=True)
-    #
-    #     result = mptn.robustness_unweighted_random_attack(number_of_tests=100,
-    #                                                       multiple_removal=100,
-    #                                                       multi_processing=True)
-    #     xc.export_list(result, filename=f'mptn_optimize_intermodal_distance_results/optimization_dst_{dst}.csv')
-    #     rb = xc.numerical_integral_nml(result[0], result[1])
-    #     log.append([dst, rb, len(intermodal_edges)])
-    # print(log)
-    # xc.export_list(log, 'mptn_optimize_intermodal_distance_results/optimization_curve.csv')
+    # xc.export_list(log, 'mptn_analyze_expanding_unweighted_network_results/log.csv')
 
 
 if __name__ == '__main__':
     analyze_expanding_unweighted_network(analyze_topology_and_GINI=1,
-                                         analyze_node_metric_distribution=1,
+                                         analyze_node_metric_distribution=0,
                                          analyze_rb=1,
                                          imt_edges=0,
                                          analyze_relocation=0,
@@ -188,7 +171,7 @@ if __name__ == '__main__':
                                          complete_mptn_only=0)
 
     analyze_expanding_unweighted_network(analyze_topology_and_GINI=1,
-                                         analyze_node_metric_distribution=1,
+                                         analyze_node_metric_distribution=0,
                                          analyze_rb=1,
                                          imt_edges=1,
                                          analyze_relocation=0,

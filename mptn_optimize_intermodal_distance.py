@@ -21,19 +21,19 @@ def run_simulation():
 
     # log = [['IMT Distance', 'Robustness', 'Number of IMT edges', 'Number of edges']]
     dst_range = list(range(0, 400, 50)) + list(range(400, 1700, 100))
-    print(dst_range)
+    print('D_IMT=', dst_range)
     for dst in dst_range:
         # import mptn network model
         mptn = create_mptn_model()
         # mptn.network.show()
         check_stop_label()
-        print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
+        # print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
         cache_dict = 'mptn_optimize_intermodal_distance_results/neighbor'
         intermodal_edges = mptn.network.generate_intermodal_edges(dst_limit=dst,
                                                                   path_to_save_neighbor_dict=cache_dict,
                                                                   read_previous_neighbor_dict=True)
         mptn.update_graph_by_routes_data(intermodal_edge_list=intermodal_edges)
-        print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
+        print('|V|=', mptn.G.number_of_nodes(), '|E|=', mptn.G.number_of_edges())
         print(len(mptn.network.functional_stop_list()))
 
         # visualization
@@ -58,10 +58,10 @@ def process_results_for_jmp(type=1):
     if type == 1:
         output_for_jmp = [['IMT Distance', 'Variable', 'Robustness', 'Number of IMT edges', 'Number of edges']]
         dst_range = list(range(0, 400, 50)) + list(range(400, 1700, 100))
-        print(dst_range)
+        print('D_IMT=', dst_range)
         for dst in dst_range:
             mptn = create_mptn_model()
-            print(mptn.G.number_of_nodes(), mptn.G.number_of_edges())
+            print('|V|=', mptn.G.number_of_nodes(), '|E|=', mptn.G.number_of_edges())
             cache_dict = 'mptn_optimize_intermodal_distance_results/neighbor'
             intermodal_edges = mptn.network.generate_intermodal_edges(dst_limit=dst,
                                                                       path_to_save_neighbor_dict=cache_dict,
@@ -70,7 +70,7 @@ def process_results_for_jmp(type=1):
             for scenario in ['rnd', 'nd', 'bc']:
                 rb = rb_value(f'mptn_optimize_intermodal_distance_results/optimization_{scenario}_dst_{dst}.csv')
                 output_for_jmp.append([dst, f'{scenario.upper()}', rb, len(intermodal_edges), mptn.G.number_of_edges()])
-        toolbox.export_list(output_for_jmp, 'mptn_optimize_intermodal_distance_results/optimization.csv')
+        toolbox.export_list(output_for_jmp, 'mptn_optimize_intermodal_distance_results/optimization_all.csv')
 
     if type == 2:
         output_for_jmp = [['s', 'c', 'Standard deviation', 'D_IMT']]
