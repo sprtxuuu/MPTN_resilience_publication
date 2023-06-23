@@ -1,7 +1,10 @@
 # oversize file
 neighbor
+
+# others
 *.png
 .idea
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
