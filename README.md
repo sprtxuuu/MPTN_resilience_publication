@@ -48,23 +48,23 @@ demo run)
 please run the python files sequentially in the following table. (Feel free to contact us).\
 Demo results have been provided.
 
-| Description / Paper section                                                 | Python file                                                    |  
-|-----------------------------------------------------------------------------|----------------------------------------------------------------|
-| **Section 2.1 Characteristics of subsystems**                               |                                                                | 
-| -- Analysis of subsystems (Table 1 & Figure 4)                              | `mptn_analyze_individual_unweighted_network.py`                |         
-| -- Null model benchmark                                                     | `benchmark_ER_analyze_individual_unweighted_network.py`        |          
-|                                                                             |                                                                |
-| **Section 2.2 Change in characteristics during one-by-one integration**     |                                                                |              
-| -- One-by-one subsystem integration (Table 2, Figure 4 & Figure 5)          | `mptn_analyze_expanding_unweighted_network.py`                 |  
-| -- Null model benchmark                                                     | `benchmark_ER_expanding_unweighted_network.py`                 |           
-|                                                                             |                                                                |
-| **Section 2.3 Interconnectedness and network robustness of MPTN**           |                                                                |
-| -- Relationship between $D_{IMT}$ and robustness (Figure 3c)                | `mptn_optimize_intermodal_distance.py`                         |
-| -- Plot curves in Figure 3a (example data has been provided)                | `results_plotting_tool.py`                                     |
-| -- Calculate Z-scores (Figure 3b & Table 2; example data has been provided) | `results_processing_Z_scores.py`                               |
-|                                                                             |                                                                |
-| **Section 2.4 Network interoperability of MPTN**                            | `mptn_analyze_expanding_unweighted_network.py`                 |
-|                                                                             | (analysis performed with Section 2.2; don't need to run again) |
+| Description / Paper section                                                 | Python file                                                                                                   |  
+|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Section 2.1 Characteristics of subsystems**                               |                                                                                                               | 
+| -- Analysis of subsystems (Table 1 & Figure 4)                              | `mptn_analyze_individual_unweighted_network.py`                                                               |         
+| -- Null model benchmark                                                     | `benchmark_ER_analyze_individual_unweighted_network.py`                                                       |          
+|                                                                             |                                                                                                               |
+| **Section 2.2 Change in characteristics during one-by-one integration**     |                                                                                                               |              
+| -- One-by-one subsystem integration (Table 2, Figure 4 & Figure 5)          | `mptn_analyze_expanding_unweighted_network.py`                                                                |  
+| -- Null model benchmark                                                     | `benchmark_ER_expanding_unweighted_network.py`                                                                |           
+|                                                                             |                                                                                                               |
+| **Section 2.3 Interconnectedness and network robustness of MPTN**           |                                                                                                               |
+| -- Relationship between $D_{IMT}$ and robustness (Figure 3c)                | `mptn_optimize_intermodal_distance.py`                                                                        |
+| -- Plot curves in Figure 3a (example data has been provided)                | `results_plotting_tool.py`                                                                                    |
+| -- Calculate Z-scores (Figure 3b & Table 2; example data has been provided) | `results_processing_Z_scores.py`                                                                              |
+|                                                                             |                                                                                                               |
+| **Section 2.4 Network interoperability of MPTN**                            | `mptn_analyze_expanding_unweighted_network.py` (analysis performed with Section 2.2; don't need to run again) |
+|                                                                             |                                                                                                               |
 
 **Other code (don't need to run):**
 
