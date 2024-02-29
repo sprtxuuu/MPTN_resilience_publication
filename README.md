@@ -44,8 +44,8 @@ matplotlib 3.3.4, multiprocessing, math, tqdm 4.41.1, collections, copy.
 30 minutes
 
 **Expect time to run analysis:**\
-300 hours for reproduction (depending on the number of repeated tests; reduce it for
-demo run)
+10 - 300 hours for reproduction (depending on the number of repeated tests; reduce it for
+quicker run)
 
 **Instruction:**\
 please run the python files sequentially in the following table. (Feel free to contact us).\
