@@ -129,4 +129,4 @@ if __name__ == '__main__':
     imt_100_z_score_rb(10, 10, 10)
     imt_0_z_score_rb(10, 10, 10)
     show_statistics(2)
-    # tb.export_list(generate_rb_curve_all_in_one(), 'Benchmark_gs_ER_results/rb_curve_all_in_one.csv')
+    tb.export_list(generate_rb_curve_all_in_one(), 'Benchmark_gs_ER_results/rb_curve_all_in_one.csv')
