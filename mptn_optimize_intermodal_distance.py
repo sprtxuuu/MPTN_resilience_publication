@@ -31,7 +31,7 @@ def run_simulation():
         cache_dict = 'mptn_optimize_intermodal_distance_results/neighbor'
         intermodal_edges = mptn.network.generate_intermodal_edges(dst_limit=dst,
                                                                   path_to_save_neighbor_dict=cache_dict,
-                                                                  read_previous_neighbor_dict=True)
+                                                                  read_previous_neighbor_dict=False)
         mptn.update_graph_by_routes_data(intermodal_edge_list=intermodal_edges)
         print('|V|=', mptn.G.number_of_nodes(), '|E|=', mptn.G.number_of_edges())
         print(len(mptn.network.functional_stop_list()))

@@ -66,7 +66,7 @@ def show_statistics(type):
             for step in range(6):
                 title, z_score = data_process(f'Benchmark_gs_ER_results/expanding_imt_{imt}_step_{step}_geospatial_efficiency.csv')
                 for i, v in enumerate(z_score):
-                    if i not in [0,1]:
+                    if i not in [0, 1]:
                         print(f'{step}, {title[i]}, {v}')
 
 def imt_100_z_score_rb(num_of_tests_1, num_of_tests_2, num_of_tests_3):
@@ -129,4 +129,4 @@ if __name__ == '__main__':
     imt_100_z_score_rb(10, 10, 10)
     imt_0_z_score_rb(10, 10, 10)
     show_statistics(2)
-    tb.export_list(generate_rb_curve_all_in_one(), 'Benchmark_gs_ER_results/rb_curve_all_in_one.csv')
+    # tb.export_list(generate_rb_curve_all_in_one(), 'Benchmark_gs_ER_results/rb_curve_all_in_one.csv')

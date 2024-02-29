@@ -2,7 +2,9 @@
 
 Authors: Zizhen Xu, Shauhrat S. Chopra*
 
-Email: S.S.C. <sschopra@cityu.edu.hk>, Z.X. <zizhenxu2@cityu.edu.hk>
+Email: S.S.C. <sschopra@cityu.edu.hk>, Z.X. updated:<zizhenxu2-c@my.cityu.edu.hk>
+
+Updated: new contact of Z.X. <zx311@cam.ac.uk> as he has left the City University of Hong Kong
 
 **Note: analysis in the paper only used part of the functions in the provided resilience analysis framework.**
 
